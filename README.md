@@ -1,13 +1,16 @@
-h1 Prueba de backend API, entre PHP con Laravel y Mongo. /h1
+<h1>Prueba de backend API, entre PHP con Laravel y Mongo</h1> 
 
-Especificaciones del proyecto
+<h3>Especificaciones del proyecto</h3> 
 
-PHP 8.1
-Composer
-Laravel 10
-Mongo (Conectado a la nube)
+<ul>
+    <li>PHP 8.1</li>
+    <li>Composer</li>
+    <li>Laravel 10</li>
+    <li>Mongo (Para BD, conectado a la nube)</li>
+    <li>Git</li>
+</ul>
 
-Manual
+<h3>Manual</h3>
 
 Para correr el proyecto, correr
 
@@ -18,6 +21,7 @@ El cual abrirá el proyecto en
 localhost:8000
 
 Listado de rutas
+Para probar la siguiente API, se usó el software Postman
 
 GET localhost:8000/api/ping
 Revisa la conexión a la BD en Mongo. Una conexión exitosa regresará "Mongo accesible", de lo contrario regresará "Mongo inaccesible"

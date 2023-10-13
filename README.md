@@ -31,7 +31,7 @@ Revisa la conexión a la BD en Mongo. Una conexión exitosa regresará "Mongo ac
 <br>
 <b>GET</b> localhost:8000/api/tasks
 <br>
-Regresa un listado de las tareas. Si la BD está vacía, regresara un 204
+Regresa un listado de las tareas. Si la BD está vacía, regresará un 204
 <br>
 <br>
 <b>POST</b> localhost:8000/api/tasks
@@ -39,8 +39,8 @@ Regresa un listado de las tareas. Si la BD está vacía, regresara un 204
 Inserta una tarea nueva en la BD. 
 <ul>
 <li>Para esto, en el body/form-data debe llevar los keys "titulo" y "descripcion".</li>  
-<li>Si alguno de los 2 está vacío, el sistema regresara un mensaje con el error. </li>
-<li>Si la tarea ya existe, regresara un mensaje de error. </li>
+<li>Si alguno de los 2 campos está vacío, el sistema regresará un mensaje con el error. </li>
+<li>Si el campo "titulo" ya existe en la BD, regresará un mensaje de error. </li>
 <li>Si el campo "titulo" es mayor a 50 caracteres, el sistema regresará error.</li>
 </ul>
 

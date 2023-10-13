@@ -27,7 +27,7 @@ Route::get('/ping', function (Request $request) {
     try {
         $con->command(['ping' => 1]);
     } catch (\Exception $e) {
-        $msg = 'Mongo no aparece';
+        $msg = 'Mongo inaccesible';
     }
     return ['msg' => $msg];
 });

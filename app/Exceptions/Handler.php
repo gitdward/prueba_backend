@@ -38,6 +38,11 @@ class Handler extends ExceptionHandler
                     'status' => 404,
                     'message' => 'Invalid url'
                 ], 404);
+            } else {
+                return response()->json([
+                    'status' => 404,
+                    'message' => 'Invalid url'
+                ], 404);
             }
         });
     }

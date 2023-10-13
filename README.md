@@ -28,10 +28,12 @@ Para probar la siguiente API, se usó el software Postman
 <br>
 Revisa la conexión a la BD en Mongo. Una conexión exitosa regresará "Mongo accesible", de lo contrario regresará "Mongo inaccesible"
 <br>
+<br>
 <b>GET</b> localhost:8000/api/tasks
 <br>
 Regresa un listado de las tareas. Si la BD está vacía, regresara un 204
-
+<br>
+<br>
 <b>POST</b> localhost:8000/api/tasks
 <br>
 Inserta una tarea nueva en la BD. 

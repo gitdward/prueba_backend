@@ -7,7 +7,7 @@
     <li>Composer</li>
     <li>Laravel 10</li>
     <li>Mongo (Para BD, conectado a la nube)</li>
-    <li>Git</li>
+    <li>Git (Para versionado)</li>
 </ul>
 
 <h3>Manual</h3>
@@ -22,14 +22,18 @@ El cual abrirá el proyecto en
 
 <h3>Listado de rutas</h3>
 Para probar la siguiente API, se usó el software Postman
-
+<br>
+<br>
 <b>GET</b> localhost:8000/api/ping
+<br>
 Revisa la conexión a la BD en Mongo. Una conexión exitosa regresará "Mongo accesible", de lo contrario regresará "Mongo inaccesible"
 
 <b>GET</b> localhost:8000/api/tasks
+<br>
 Regresa un listado de las tareas. Si la BD está vacía, regresara un 204
 
 <b>POST</b> localhost:8000/api/tasks
+<br>
 Inserta una tarea nueva en la BD. 
 -Para esto, en el body/form-data debe llevar los keys "titulo" y "descripcion". 
 -Si alguno de los 2 está vacío, el sistema regresara un mensaje con el error. 

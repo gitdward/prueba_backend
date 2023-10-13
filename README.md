@@ -14,22 +14,22 @@
 
 Para correr el proyecto, correr
 
-php artisan serve
+<code>php artisan serve</code>
 
 El cual abrirá el proyecto en 
 
-localhost:8000
+<code>localhost:8000</code>
 
-Listado de rutas
+<h3>Listado de rutas</h3>
 Para probar la siguiente API, se usó el software Postman
 
-GET localhost:8000/api/ping
+<b>GET</b> localhost:8000/api/ping
 Revisa la conexión a la BD en Mongo. Una conexión exitosa regresará "Mongo accesible", de lo contrario regresará "Mongo inaccesible"
 
-GET localhost:8000/api/tasks
+<b>GET</b> localhost:8000/api/tasks
 Regresa un listado de las tareas. Si la BD está vacía, regresara un 204
 
-POST localhost:8000/api/tasks
+<b>POST</b> localhost:8000/api/tasks
 Inserta una tarea nueva en la BD. 
 -Para esto, en el body/form-data debe llevar los keys "titulo" y "descripcion". 
 -Si alguno de los 2 está vacío, el sistema regresara un mensaje con el error. 

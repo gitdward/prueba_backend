@@ -34,13 +34,9 @@ class TaskController extends Controller
      */
     public function store(StoreTaskRequest $request)
     {
-        // dd($request);
         // Retrieve the validated input data...
         $validated = $request->validated();
 
-        // Retrieve a portion of the validated input data...
-        // $validated = $request->safe()->only(['titulo', 'descripcion']);
-        // $validated = $request->safe()->except(['titulo', 'descripcion']);
         $task = Task::create($validated);
         return response()->json($task, 201);
     }

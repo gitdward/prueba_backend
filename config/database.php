@@ -92,7 +92,7 @@ return [
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
-        'mongodb' => [
+        'mongodb2' => [
             'driver' => 'mongodb',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', 27017),
@@ -104,6 +104,11 @@ return [
             ], */
         ],
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('DB_URI', 'mongodb+srv://iglesiasedd:wWwmy2oGVpgcvgSx@cluster0.wwz6wxm.mongodb.net/?retryWrites=true&w=majority'),
+            'database' => 'prueba_backend',
+        ]
     ],
 
     /*
